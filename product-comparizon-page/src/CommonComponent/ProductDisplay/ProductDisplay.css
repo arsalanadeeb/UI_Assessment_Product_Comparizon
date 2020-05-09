@@ -1,0 +1,29 @@
+
+.product-display-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prodct-display-image-size{
+    width:12rem;
+    height:8rem;
+}
+.product-display-flex{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: left;
+    margin:auto;
+}
+.product-display-green{
+    color: green;
+    margin-left: 0.2rem;
+}
+.product-display-original-price{
+    color: grey;
+    text-decoration: line-through;
+    margin-left: 0.2rem;
+}

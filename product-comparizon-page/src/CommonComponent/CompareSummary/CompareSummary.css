@@ -1,0 +1,11 @@
+.compare-summary-grey-row{
+    background-color:#F8F8F8;
+    border-top: solid 1px lightgray;
+}
+.compare-summary-catagory{
+    text-transform: uppercase;
+    border-right: solid 1px lightgray;
+}
+.compare-summary-seperator{
+    border-right: solid 1px lightgray;
+}
