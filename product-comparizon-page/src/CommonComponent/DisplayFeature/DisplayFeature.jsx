@@ -3,25 +3,8 @@ import {Container,Row,Col} from 'react-bootstrap'
 import "./CompareSummary.css"
 
 
-export default function CompareSummary (props){
-    let diffArray=[
-    {
-        catagoryName:"Size",
-        productOne:"60cm",
-        productTwo:"120cm",
-    },
-    {
-        catagoryName:"Size",
-        productOne:"60cm",
-        productTwo:"120cm",
-    },
-    {
-        catagoryName:"Size",
-        productOne:"60cm",
-        productTwo:"120cm",
-    },
-     
-    ]
+export default function DisplayFeature (props){
+
     return(
         <Container>
             <Row className="compare-summary-grey-row">
@@ -29,7 +12,7 @@ export default function CompareSummary (props){
                 <Col className="compare-summary-seperator" sm={4} md={4} lg={4}></Col>
                 <Col sm={4} md={4} lg={4}></Col>
             </Row>
-            {diffArray.map((item,index)=>{
+            {props.diffArray.map((item,index)=>{
                return(  
                <Row key={index}>
                 <Col className="compare-summary-seperator" sm={4} md={4} lg={4}>{item.catagoryName}</Col>

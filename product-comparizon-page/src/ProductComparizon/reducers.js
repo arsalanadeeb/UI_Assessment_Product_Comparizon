@@ -18,7 +18,6 @@ import * as types from "./constants";
             }
         }
       case types.FETCH_PRODUCT_DETAIL_SUCCESS:
-        console.log('back to reducer',action)
         return {
             products: {
                 fetchingProducts: false,

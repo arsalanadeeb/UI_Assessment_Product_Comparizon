@@ -7,17 +7,17 @@ export default function ProductDisplay(props){
     return (
       <div className="product-display-container">
         <div>
-        <img className="prodct-display-image-size"src="https://rukminim1.flixcart.com/image/1000/1000/jj367bk0/television/g/c/6/vu-40d6575-original-imaf6qqy4vfneabe.jpeg?q=100"/>
+        <img className="prodct-display-image-size"src={props.imageLink}/>
         </div>
 
-         <div>
-         LG 60 cm 20 inch
+         <div className="prodct-display-title">
+         {props.title}
          </div>
 
           <div className="product-display-flex">
-         <div><span >&#x20B9;</span>1099</div>
-         <div className="product-display-original-price"><span >&#x20B9;</span>1200</div>
-         <div className="product-display-green">9% off</div>
+    <div><span >&#x20B9;</span>{props.finalPrice}</div>
+    <div className="product-display-original-price"><span >&#x20B9;</span>{props.price}</div>
+    <div className="product-display-green">{props.totalDiscount + "off"}</div>
           </div>
     </div>
     );

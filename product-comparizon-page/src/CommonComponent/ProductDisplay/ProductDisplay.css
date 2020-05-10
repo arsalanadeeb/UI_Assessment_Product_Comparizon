@@ -5,6 +5,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
+    width: 15rem;
 }
 
 .prodct-display-image-size{
@@ -26,4 +28,7 @@
     color: grey;
     text-decoration: line-through;
     margin-left: 0.2rem;
+}
+.prodct-display-title{
+    height: 3rem;
 }

@@ -1,6 +1,7 @@
 .compare-summary-grey-row{
     background-color:#F8F8F8;
     border-top: solid 1px lightgray;
+    margin-top: 1rem;
 }
 .compare-summary-catagory{
     text-transform: uppercase;

@@ -1,0 +1,21 @@
+.product-comparizon-main-heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+.product-comparizon-sub-heading{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.product-comparizon-placehoder-image{
+    width: 80%;
+    height: 8rem;
+    background: lightgray;
+    margin-top: 1rem;
+}
+.product-comparizon-checkbox{
+    margin-top: 5rem;
+}
+.product-comparizon-main-wrapper{
+    margin-bottom: 2rem;
+}

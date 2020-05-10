@@ -1,37 +1,17 @@
-import React  from 'react'
+import React , {useState} from 'react'
 import "./commonDropDown.css"
+import Select from 'react-select';
 
-export default function commonDropDown (props) {
-
-  let inputArray = [
-    {
-      value: "arsalan",
-      displayValue: "Arsalan",
-      key:"key1"
-    },
-    {
-      value: "arsalan1",
-      displayValue: "Arsalan1",
-      key:"key2"
-    },
-    {
-      value: "arsalan2",
-      displayValue: "Arsalan2",
-      key:"key3"
-    },
-    {
-      value: "arsalan3",
-      displayValue: "Arsalan3",
-      key:"key4"
-    },
+export default function CommonDropDown (props) {
+  let options = [
+  ...props.productList
   ];
- //importance of key
+ 
     return (
-          <select value={"grapefruit"} className="common-drop-down-container" onChange={(e)=>{console.log(e.target.value)}}>
-           {inputArray.map((option,index)=>{
-             return  <option key={option.key} value={option.value}>{option.displayValue}</option>
-           })}
-          </select>
+          <Select 
+          className="common-drop-down-container"
+          onChange={(value)=>{props.getSelectedItem(value,props.index)}}
+          options={options} />
     );
   }
 
